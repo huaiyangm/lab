@@ -100,8 +100,8 @@
             <collectionProp name="AuthManager.auth_list">
               <elementProp name="" elementType="Authorization">
                 <stringProp name="Authorization.url">https://${Host}${ServiceGWSAMPLE}</stringProp>
-                <stringProp name="Authorization.username">${__P(gw_es4_user)}</stringProp>
-                <stringProp name="Authorization.password">${__P(gw_es4_password)}</stringProp>
+                <stringProp name="Authorization.username">${User}</stringProp>
+                <stringProp name="Authorization.password">${Password}</stringProp>
                 <stringProp name="Authorization.domain"></stringProp>
                 <stringProp name="Authorization.realm"></stringProp>
               </elementProp>
