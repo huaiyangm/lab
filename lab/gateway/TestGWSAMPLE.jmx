@@ -26,11 +26,20 @@
           </elementProp>
           <elementProp name="User" elementType="Argument">
             <stringProp name="Argument.name">User</stringProp>
-            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.value">${__P(gw_es4_user)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="Password" elementType="Argument">
+            <stringProp name="Argument.name">Password</stringProp>
+            <stringProp name="Argument.value">${__P(gw_es4_password)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
       </Arguments>
+      <hashTree/>
+      <com.tag.jmeter.ext.config.PropertyReader guiclass="TestBeanGUI" testclass="com.tag.jmeter.ext.config.PropertyReader" testname="Property File Reader" enabled="true">
+        <stringProp name="propFilePath">D:\dev\github\repository-lab\lab\gateway\jmx.properties</stringProp>
+      </com.tag.jmeter.ext.config.PropertyReader>
       <hashTree/>
       <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
         <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
@@ -91,8 +100,8 @@
             <collectionProp name="AuthManager.auth_list">
               <elementProp name="" elementType="Authorization">
                 <stringProp name="Authorization.url">https://${Host}${ServiceGWSAMPLE}</stringProp>
-                <stringProp name="Authorization.username">${User}</stringProp>
-                <stringProp name="Authorization.password"></stringProp>
+                <stringProp name="Authorization.username">${__P(gw_es4_user)}</stringProp>
+                <stringProp name="Authorization.password">${__P(gw_es4_password)}</stringProp>
                 <stringProp name="Authorization.domain"></stringProp>
                 <stringProp name="Authorization.realm"></stringProp>
               </elementProp>
