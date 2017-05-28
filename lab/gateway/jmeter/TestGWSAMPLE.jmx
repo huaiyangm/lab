@@ -12,7 +12,7 @@
     </TestPlan>
     <hashTree>
       <com.tag.jmeter.ext.config.PropertyReader guiclass="TestBeanGUI" testclass="com.tag.jmeter.ext.config.PropertyReader" testname="Property File Reader" enabled="true">
-        <stringProp name="propFilePath">D:\dev\github\repository-lab\lab\gateway\jmeter\jmx.properties</stringProp>
+        <stringProp name="propFilePath">D:\dev\github\repository-lab\lab\gateway\jmeter\logon.properties</stringProp>
       </com.tag.jmeter.ext.config.PropertyReader>
       <hashTree/>
       <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
